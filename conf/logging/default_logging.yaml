@@ -1,0 +1,7 @@
+labels:
+  train_loss_label: "train_loss"
+
+logger:
+  _target_: lightning.loggers.CometLogger
+  project_name: ${project}
+  

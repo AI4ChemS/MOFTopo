@@ -1,0 +1,9 @@
+datamodule:
+  _target_: MOFTopo.data.ZeoliteDataModule
+  train_pctg: 0.6
+  val_pctg: 0.2
+  test_pctg: 0.2
+  
+dataset:
+  _target_: MOFTopo.data.ZeoliteDataset
+  processed_dir: ${oc.env:DATA_ROOT}/zeolite/processed_test

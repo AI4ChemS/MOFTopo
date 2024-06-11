@@ -1,0 +1,18 @@
+project: "MOFTopo"
+exp_name: "prototyping"
+
+
+# metadata specialised for each experiment
+core:
+  version: 0.0.1
+  tags:
+    - ${now:%Y-%m-%d-%H-%M}
+
+
+defaults:
+  - data: zeolite
+  - logging: default_logging
+  - model: default_model
+  - optim: default_optim
+  - train: default_train
+  - _self_
